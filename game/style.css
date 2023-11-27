@@ -1,0 +1,50 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* 游戏容器 */
+#game-container {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+/* 游戏画布 */
+#tetris-canvas {
+    border: 2px solid #333;
+    background-color: #000;
+}
+
+/* 得分板 */
+#score-board {
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #fff;
+}
+
+/* 下一个方块预览 */
+#next-piece {
+    border: 1px solid #333;
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* 调整画布的大小 */
+#tetris-canvas, #next-piece-canvas {
+    width: 300px;
+    height: 600px; /* 2:1 的比例，适合俄罗斯方块的布局 */
+}
+
+/* 文本样式 */
+#score-board div, #next-piece div {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
